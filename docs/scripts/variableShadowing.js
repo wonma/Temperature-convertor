@@ -9,8 +9,8 @@ let getNewScoreMessage = function () {
 // Declared function call named 'printResult'
 let printResult = getNewScoreMessage()
 
-getNewScoreMessage() //this doesn't do anything?????
-printResult;
+getNewScoreMessage() //this doesn't do anything, Why ?????
+printResult         //this doesn't do anything, either Why ?????
 
 
 // console.log(printResult)
