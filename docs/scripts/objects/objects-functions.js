@@ -14,18 +14,43 @@ let otherbook = {
     year: 2030
 }
 
-let getInfo = function (bookName) {
+const sumGenerator = (bookName) => {
     return {
-        shortInfo : 'this book \'' + bookName.title + '\' is awesome.',
-        longInfo : 'this book named \'' + bookName.title + '\' is popular and it\'s published in ' + bookName.year + '.'
+        short: `Short!! ${bookName.title}'s author ${bookName.author} on ${bookName.year}.`,
+        long: `blah blah blah The book ${bookName.title}'s author ${bookName.author} published it on ${bookName.year}.`
     }
 }
+// One of the reasons why we return a object from function is that
+// we can return multiple options.
 
-let infoList_myBook = getInfo(mybook)
-let infoList_otherBook = getInfo(otherbook)
+sumGenerator(mybook)
+// This is an "object" that has two data. (object function?) 
+// We put 'mybook' object as an argument and use it
+// when a couple of objects have the "same properties".
 
-console.log(infoList_myBook.shortInfo)
-console.log(infoList_otherBook.longInfo)
+sumGenerator(mybook).short 
+// This itself doesn't do anything 
+// We have to DO SOMETHING with the returned value.
+
+console.log(sumGenerator(mybook).short)
+
+
+
+
+
+
+// let getInfo = function (bookName) {
+//     return {
+//         shortInfo : 'this book \'' + bookName.title + '\' is awesome.',
+//         longInfo : 'this book named \'' + bookName.title + '\' is popular and it\'s published in ' + bookName.year + '.'
+//     }
+// }
+
+// let infoList_myBook = getInfo(mybook)
+// let infoList_otherBook = getInfo(otherbook)
+
+// console.log(infoList_myBook.shortInfo)
+// console.log(infoList_otherBook.longInfo)
 
 // 나의 오류 : 아래처럼 복잡하게 할 필요 없었음
 // let infoList = getInfo(mybook)
