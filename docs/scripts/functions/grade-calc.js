@@ -5,8 +5,8 @@
 
 let grade;
 
-let cal = function (score, total) {
-    let percentage = (score / total) * 100
+const cal = function (score, total) {
+    const cost  = (score / total) * 100
     
     if (percentage >= 90) {
         grade = 'A'
@@ -23,8 +23,8 @@ let cal = function (score, total) {
     return 'the grade is ' + grade
 }
 
-let student1 = cal(15, 20)
-let student2 = cal(19, 20)
+const student1 = cal(15, 20)
+const student2 = cal(19, 20)
 
 console.log(student1)
 console.log(student2)
