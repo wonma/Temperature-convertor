@@ -6,7 +6,17 @@
 // [Tip] how to grab item from backwards
 // 전체 길이 (총아이템갯수)에서 -1해주기)
 
-const notes = ['Note 1', 'Note 2', 'Note 3']
+const notes = ['Note 1', 'Note 2', 'Note 3', 'Note 4', 'Note 5']
 
-console.log(notes.length)
-console.log(notes[notes.length - 1])
+// console.log(notes.length)
+// console.log(notes[notes.length - 1])
+
+
+// Counting specific number of items
+// for (initializer, condition, final expression) {
+
+// }
+
+for (let count = 0; count < notes.length; count++ ) {
+    console.log(`${count + 1}. ${notes[count]}`)    
+}
